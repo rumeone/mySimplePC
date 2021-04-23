@@ -1,0 +1,24 @@
+
+#ifndef DRAW_H
+#define DRAW_H
+#include "bigChars.h"
+#include "myReadkey.h"
+#include "func.h"
+#include "myTerm.h"
+
+int num_element;
+void init();
+void clean_input();
+void save();
+void load();
+void move(int i);
+void K_UP();
+void K_DOWN();
+void K_RIGHT();
+void K_LEFT();
+void K_ENTER();
+void F5();
+void F6();
+void Draw();
+
+#endif

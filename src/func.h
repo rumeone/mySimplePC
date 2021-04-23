@@ -15,14 +15,16 @@
 
 /* Регистры флагов */
 
-#define OVERFLOW 0b00000001
-#define DIVISION_BY_ZERO 0b00000010
-#define EXIT_RANGE_MEMORY 0b00000100
-#define IGNORE_CLOCK_PULSES 0b00001000
-#define INVALID_COMMAND_SPECIFIED 0b00010000
+#define P 0b00000001
+#define O 0b00000010
+#define M 0b00000100
+#define T 0b00001000
+#define E 0b00010000
 
 int array[SIZE_ARRAY];
 int register_flags;
+int accumulator;
+int instructionCounter;
 
 int sc_memoryInit();
 int sc_memorySet(int address, int value);
