@@ -1,3 +1,6 @@
+#ifndef MYREADKEY_H
+#define MYREADKEY_H
+
 #include <stdio.h>
 #include <string.h>
 #include <termios.h>
@@ -15,7 +18,9 @@ enum keys {
   KEY_R,
   KEY_T,
   KEY_I,
-  KEY_OTHER
+  KEY_OTHER,
+  KEY_Q,
+  KEY_ENTER
 };
 
 struct termios options;
@@ -26,3 +31,6 @@ int rk_readkey(enum keys * key);
 int rk_mytermrestore();
 int rk_mytermsave();
 int rk_mytermregime(int regime, int vtime, int vmin, int echo, int sigint);
+
+
+#endif

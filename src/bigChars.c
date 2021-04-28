@@ -3,24 +3,6 @@
 
 #include "myTerm.h"
 
-int zero[2] = {1111638588, 1010975298};
-int one[2] = {404364312, 2115508248};
-int two[2] = {1615096888, 2081167408};
-int three[2] = {1615086648, 943998016};
-int four[2] = {1145324612, 1077952636};
-int five[2] = {1006896252, 1010843712};
-int six[2] = {1006896248, 943998020};
-int seven[2] = {1077952636, 1077952576};
-int eight[2] = {943998008, 943998020};
-int nine[2] = {2084848764, 2084585536};
-int plus[2] = {2081427456, 4112};
-int a[2] = {1145317392, 1145324668};
-int b[2] = {1011106876, 1011106884};
-int c[2] = {67372152, 2013529092};
-int d[2] = {1145316380, 472138820};
-int e[2] = {1006896252, 2080637956};
-int f[2] = {1006896252, 67372036};
-
 int bc_printA(char* str) {
   printf("\E(0%s\E(B", str);
   return 0;
@@ -150,7 +132,7 @@ int bc_bigcharread(int fd, int* digit, int need_count, int* count)
     return 0;
 }
 
-void interface() {
+/*void interface() {
 
     srand(time(NULL));
     mt_clrscr();
@@ -245,4 +227,4 @@ void interface() {
     mt_gotoXY(80, 0);
 
 
-}
+}*/

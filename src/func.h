@@ -1,4 +1,5 @@
-#include <stdio.h> 
+#ifndef FUNC_H
+#define FUNC_H
 
 #define SIZE_ARRAY 100
 
@@ -36,3 +37,5 @@ int sc_regSet(int registr, int value);
 int sc_regGet(int registr, int* value);
 int sc_commandEncode(int command, int operand, int* value);
 int sc_commandDecode(int value, int* command, int* operand);
+
+#endif

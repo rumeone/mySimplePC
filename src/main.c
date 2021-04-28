@@ -1,29 +1,47 @@
-#include <stdio.h>
-#include "bigChars.h"
-#include "func.h"
-#include "myTerm.h"
-
-int main() {
-
-  /*bc_printbigchar(zero, 10, 0, 0, 7);
-  bc_printbigchar(one, 10, 9, 0, 7);
-  bc_printbigchar(two, 10, 17, 0, 7);
-  bc_printbigchar(three, 10, 25, 0, 7);
-  bc_printbigchar(four, 10, 33, 0, 7);
-  bc_printbigchar(five, 10, 41, 0, 7);
-  bc_printbigchar(six, 10, 49, 0, 7);
-  bc_printbigchar(seven, 10, 57, 0, 7);
-  bc_printbigchar(eight, 10, 65, 0, 7);
-  bc_printbigchar(nine, 10, 73, 0, 7);
-  bc_printbigchar(plus, 10, 80, 0, 7);
-  bc_printbigchar(F, 10, 87, 0, 7);
-
-
-  int* value = malloc(sizeof(int));
-  bc_getbigcharpos(zero, 7, 4, value);
-  printf("\n\n\n\nvalue = %d\n", *value);*/
-
-  interface();
-
-  //mt_clrscr();
+#include "draw.h"
+int main()
+{
+    srand(time(NULL));
+    /*init();
+    while (key != KEY_Q) {
+        Draw();
+        rk_readkey(&key);
+        switch (key) {
+        case KEY_UP:
+            K_UP();
+            break;
+        case KEY_DOWN:
+            K_DOWN();
+            break;
+        case KEY_RIGHT:
+            K_RIGHT();
+            break;
+        case KEY_LEFT:
+            K_LEFT();
+            break;
+        case KEY_F5:
+            F5();
+            break;
+        case KEY_F6:
+            F6();
+            break;
+        case KEY_L:
+            load();
+            break;
+        case KEY_S:
+            save();
+            break;
+        case KEY_R:
+            break;
+        case KEY_I:
+        init();
+        case KEY_Q:
+        break;
+        case KEY_T:
+            break;
+        case KEY_OTHER:
+            break;
+        }
+    }*/
+    return 0;
 }

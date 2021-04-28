@@ -1,12 +1,15 @@
 
 #ifndef DRAW_H
 #define DRAW_H
+
 #include "bigChars.h"
 #include "myReadkey.h"
 #include "func.h"
 #include "myTerm.h"
 
 int num_element;
+
+
 void init();
 void clean_input();
 void save();
@@ -19,6 +22,6 @@ void K_LEFT();
 void K_ENTER();
 void F5();
 void F6();
-void Draw();
+//void Draw();
 
 #endif
