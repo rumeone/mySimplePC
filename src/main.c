@@ -1,8 +1,12 @@
 #include "draw.h"
 int main()
 {
-    srand(time(NULL));
-    /*init();
+ srand(time(NULL));
+    init();
+    for (int i = 0; i < SIZE_ARRAY; i++) {
+        // sc_memorySet(i, rand() % 16383);
+        sc_memorySet(i, rand() % 32768);
+    }
     while (key != KEY_Q) {
         Draw();
         rk_readkey(&key);
@@ -33,15 +37,19 @@ int main()
             break;
         case KEY_R:
             break;
-        case KEY_I:
-        init();
-        case KEY_Q:
-        break;
         case KEY_T:
+            break;
+        case KEY_I:
+            init();
+            break;
+        case KEY_Q:
+            break;
+        case KEY_ENTER:
+            K_ENTER();
             break;
         case KEY_OTHER:
             break;
         }
-    }*/
+    }
     return 0;
 }

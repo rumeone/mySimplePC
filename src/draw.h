@@ -22,6 +22,6 @@ void K_LEFT();
 void K_ENTER();
 void F5();
 void F6();
-//void Draw();
+void Draw();
 
 #endif

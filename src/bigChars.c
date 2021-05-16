@@ -3,6 +3,7 @@
 
 #include "myTerm.h"
 
+
 int bc_printA(char* str) {
   printf("\E(0%s\E(B", str);
   return 0;
@@ -132,7 +133,7 @@ int bc_bigcharread(int fd, int* digit, int need_count, int* count)
     return 0;
 }
 
-/*void interface() {
+void interface() {
 
     srand(time(NULL));
     mt_clrscr();
@@ -227,4 +228,4 @@ int bc_bigcharread(int fd, int* digit, int need_count, int* count)
     mt_gotoXY(80, 0);
 
 
-}*/
+}
